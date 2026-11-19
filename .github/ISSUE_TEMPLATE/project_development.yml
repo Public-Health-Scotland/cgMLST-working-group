@@ -1,0 +1,76 @@
+name: Project Development
+description: Issue submitted to track project development tasks.
+title: "[Project development]: "
+labels: ["development", "triage"]
+body:
+  - type: dropdown
+    id: task-priority
+    attributes:
+      label: Task priority
+      description: |
+       How important is the task/question to the project?
+
+       Essential: A core component which needs to be implemented for the final project to meet its aims.
+
+       Moderate: 
+
+       Low: A nice to have feature or component which is not required for delivery, but would improve the final output.
+       
+       
+      options:
+        - Essential
+        - Moderate
+        - Low
+      default: 0
+    validations:
+      required: true
+  - type: dropdown
+    id: task-class
+    attributes:
+      label: Task classification
+      description: |
+       Stakeholder request : An ask by a stakeholder
+
+       Scientific validation : Assessing the scientific basis for a project component
+
+       Efficiency improvement : Change how a pipeline functions to improve efficiency
+
+       Project interoperablility : Modify inputs/outputs/intermediate files for up/downstream processes
+
+       Documentation : Request relates to improvements to documentation
+
+       Other : Another reason not covered by the above options
+      options:
+        - 'Yes'
+        - 'No'
+      default: 0
+    validations:
+      required: true
+  - type: textarea
+    id: task-class-other
+    attributes:
+      label: Prior issue identity
+      description: If you answered yes to the above, please include a link to the related issue page here.
+      placeholder: Issue page link
+  - type: textarea
+    id: ask
+    attributes:
+      label: Task description
+      description: |
+       Please outline thetask here. Try to be clear and concise. 
+
+       What is the task, what is its role in the final functional project? 
+       What is the current context of this task in the wider project at the time of issue instantiation? 
+       What is needed to complete it? 
+      placeholder: |
+        # Task name
+
+        ## Task rationale
+        
+        ## Description of task
+
+        ## Relevant issues or code?
+
+        ## Relevant data on SG2 or Internet
+
+        
