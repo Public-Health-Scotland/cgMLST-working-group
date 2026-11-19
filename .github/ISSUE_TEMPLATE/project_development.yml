@@ -66,9 +66,7 @@ body:
        What is the task, what is its role in the final functional project? 
        What is the current context of this task in the wider project at the time of issue instantiation? 
        What is needed to complete it? 
-      placeholder: |
-        # Task name
-
+      value: |
         ## Task rationale
         
         ## Description of task
