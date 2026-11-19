@@ -41,8 +41,12 @@ body:
 
        Other : Another reason not covered by the above options
       options:
-        - 'Yes'
-        - 'No'
+        - 'Stakeholder request'
+        - 'Scientific validation'
+        - 'Efficiency improvement'
+        - 'Project interoperablility'
+        - 'Documentation'
+        - 'Other'
       default: 0
     validations:
       required: true
