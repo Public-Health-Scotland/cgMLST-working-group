@@ -53,9 +53,9 @@ body:
   - type: textarea
     id: task-class-other
     attributes:
-      label: Prior issue identity
-      description: If you answered yes to the above, please include a link to the related issue page here.
-      placeholder: Issue page link
+      label: Task classification: Other
+      description: If you answered 'Other' to the above, please describe the classification here.
+      placeholder: Other task classification
   - type: textarea
     id: ask
     attributes:
