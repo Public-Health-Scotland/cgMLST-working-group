@@ -53,8 +53,8 @@ body:
   - type: textarea
     id: task-class-other
     attributes:
-      label: Task classification: Other
-      description: If you answered 'Other' to the above, please describe the classification here.
+      label: Other task classification
+      description: If you answered Other to the above, please describe the classification here.
       placeholder: Other task classification
   - type: textarea
     id: ask
